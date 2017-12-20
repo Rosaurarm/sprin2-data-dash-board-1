@@ -1,0 +1,117 @@
+    <!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+  <title>Data Dashboard</title>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+ <body>
+<header>
+
+ <img src="assets/images/logo-laboratoria.svg" alt="logo">
+</header>
+
+<nav className = "navigator">
+<ul>
+
+ <li><p value = "overview">OVERVIEW</p><hr class = "sub">
+</li><span></span>
+<li><p  value = "teachers"> TEACHERS </p> <hr class ="none"</li>
+  </ul
+>
+</nav>
+
+<main>
+  <section id = filters>
+ <div>
+<select class="sede-filter" onchange ="sede(event)" name="promocion">
+ <option value="">seleciona  sede</option>
+ <option value="AQP">Arequipa</option>
+ <option value="Lim">Lima</option>
+<option value="CDMX">Mexico</option>
+ <option value="SCL">Santiago  Chile</option>
+  </select>
+<select class="ciclo-filter" name="generations">
+
+    <option value="">Generations</option>
+
+      <option value="">Selecciona todo</option>
+
+       <option value="2016-2">2016-2</option>
+
+      <option value="2017-1">2017-1</option>
+
+     <option value="2017-2">2017-2</option>
+</select>
+<section  id = container >
+
+  <div id="datos">     <!--promedio  de  score-->
+
+    <div class="container-overview">
+
+      <p>MEET ACHIEVEMENT</p>  !--Promedio toTAL porcentaje-->
+    <!--Promedio total en porcentaje-->
+     <p>80%</p>
+     </span>
+      <!--Insertar grafico promedio de notas HSE-->
+     <img src="assets/images/circle-graphic.png" alt="grafico">
+    <!--Insertar datos numericos promedio notas HSE-->
+     <table>
+      <tbody>
+      <tr>
+     <td>Students that meet the target</td>
+     <!--Insertar porcentaje de alumnas que paso el minimo hse por sprint-->
+      <td>20</td>
+     <!--Insertar numero de alumnas que paso el minimo hse por sprint-->
+      <td>40</td>
+       </tr>
+     <tr>
+        <td>Students that not meet the target</td>
+      <!--Insertar porcentaje de alumnas que no paso el minimo hse por sprint-->
+        <td>10%</td>
+      <!--Insertar numero de alumnas que no paso el minimo hse por sprint-->
+       <td>13</td>
+      </tr>
+
+   <div id=notas-hse>
+   <span>
+    <p>HSE ACHIEVEMENT</p>
+     <!--Promedio total en porcentaje-->
+      <p>80%</p>
+      </span>
+       <!--Insertar grafico promedio de notas HSE-->
+      <img src="assets/images/circle-graphic.png" alt="grafico">
+     <!--Insertar datos numericos promedio notas HSE-->
+      <table>
+       <tbody>
+       <tr>
+      <td>Students that meet the target</td>
+      <!--Insertar porcentaje de alumnas que paso el minimo hse por sprint-->
+       <td>90%</td>
+      <!--Insertar numero de alumnas que paso el minimo hse por sprint-->
+       <td>117</td>
+        </tr>
+      <tr>
+         <td>Students that not meet the target</td>
+       <!--Insertar porcentaje de alumnas que no paso el minimo hse por sprint-->
+         <td>10%</td>
+       <!--Insertar numero de alumnas que no paso el minimo hse por sprint-->
+        <td>13</td>
+       </tr>
+       </tbody>
+       </table>
+        </div>
+        <div id=notas-tech>
+         <span>
+
+
+
+
+
+		<!-- Base de datos -->
+		<script src="./js/data.js"></script>
+		<!-- Aquí va tus archivos JS -->
+    <script src="./js/app.js"></script>
+  </body>
+</html>
